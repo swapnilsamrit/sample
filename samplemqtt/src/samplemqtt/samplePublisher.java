@@ -15,7 +15,7 @@ public class samplePublisher extends Thread implements MqttCallback {
 	public void connectionLost(Throwable arg0) {
 		System.out.println("connection lost");
 	}
-
+ 
 	@Override
 	public void deliveryComplete(IMqttDeliveryToken arg0) {
 		System.out.println("Delivery completed");
